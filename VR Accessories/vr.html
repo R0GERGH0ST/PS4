@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="vr style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Accessories</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/ig.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../index.html">Game Controller</a></li>
+                    <li><a href="VR Accessories/vr.html">VR Accessories</a></li>
+                    <li><a href="">Media remote</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="../img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Oculus Quest 2 </h2>
+                <h3>All-In-One Virtual Reality Headset</h3>
+                <p>(128GB)</p>
+                <h4>$400</h4>
+                <button class="arrow" type="button">buy now<img src="../img/arrow.png">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="img/Oculus-Quest-2.png" class="vr">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        <div class="add-btn">
+            <button class="cart" type="button">Add To Cart<img src="../img/add.png">
+            </button>
+        </div>
+
+
+
+
+        <div class="social-links">
+            <img src="../img/fb.png">
+            <img src="../img/ig.png">
+            <img src="../img/tw.png">
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
