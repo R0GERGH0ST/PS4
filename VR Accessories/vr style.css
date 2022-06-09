@@ -88,7 +88,7 @@ nav ul li a:hover{
     font-size: 20px;
 }
 
-button{
+.arrow{
     width: 140px;
     border: 0;
     padding: 12px 10px;
@@ -100,20 +100,41 @@ button{
     transition: width 0.5s;
 }
 
-button img{
+.arrow img{
     width: 30px;
     display: none;
 }
 
-button:hover img{
+.arrow:hover img{
     display:block;
 }
 
-button:hover{
+.arrow:hover{
     width: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.cart{
+    width: 100px;
+    height: 60px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 6px;
+    transition: ease-out 0.5s;
+    outline: none;
+}
+
+.cart img{
+    display: none;
+}
+.cart:hover img{
+    display: inline-block;
+}
+.cart:hover{
+    cursor: pointer;
 }
 
 .col-1::after{
@@ -133,9 +154,33 @@ button:hover{
     align-items: center;
 }
 
-.controller{
+.vr{
+    /* height: 520px; */
     width: 90%;
+    /* background-image: url(img/Oculus-Quest-2.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation-name: vranm;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
 }
+
+/* @keyframes vranm{
+    25%{
+        background-image: url(img/Oculus-Quest-2.png);
+    }
+    50%{
+        background-image: url(img/vr.png);
+    }
+    75%{
+        background-image: url(img/details.png);
+    }
+    100%{
+        background-image: url(img/gears.png);
+    }
+} */
 
 .color-box{
     position: absolute;
@@ -152,11 +197,11 @@ button:hover{
 
 .add-btn img{
     width: 35px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
 .add-btn{
-    text-align: center;
+    text-align: right;
     color: #fff;
     cursor: pointer;
 }
@@ -208,7 +253,7 @@ button:hover{
         margin-bottom: 50px;
     }
 
-    .controller{
+    .vr{
         width: 77%;
     }
     .color-box{
