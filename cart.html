@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console website</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Game Controller</a></li>
+                    <li><a href="VR Accessories/vr.html">VR Accessories</a></li>
+                    <li><a href="remote/remote.html">Media remote</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="container cart-page">
+
+            <table>
+                <tr>
+                    <th>Products</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="img/controller.png">
+                            <div>
+                                <br>
+                                <p>PS4 v2 DualShock 4</p>
+                                <small>Price: $30</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="VR Accessories/img/Oculus-Quest-2.png">
+                            <div>
+                                <br>
+                                <p>Oculus Quest 2</p>
+                                <small>Price: $400</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="remote/img/rem.png">
+                            <div>
+                                <br>
+                                <p>Media Remote</p>
+                                <small>Price: $25</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$25.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$455.00</td>
+                    </tr>
+                    <tr>
+                        <td>GST</td>
+                        <td>18%</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$537.00</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="social-links">
+            <img src="img/fb.png">
+            <img src="img/ig.png">
+            <img src="img/tw.png">
+
+        </div>
+
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
