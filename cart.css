@@ -158,6 +158,6 @@ th:last-child{
         transition:  0.5s;
     }
     .cart-info p{
-        display: none;
+        /* display: none; */
     }
 }
